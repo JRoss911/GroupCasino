@@ -8,8 +8,10 @@ import java.util.Date;
  * The `ArcadeAccount` is used to log into the system to select a `Game` to play.
  */
 public class CasinoAccount {
-    public CasinoAccount(String firstName, String lastName, Date birthdate, String userName, String password) {
-    }
+
+    public CasinoAccount(String firstName, String lastName, Date birthDate, String userName, String password) {}
+
+ 
 
     public String getFirstName() {
         return null;
@@ -19,9 +21,18 @@ public class CasinoAccount {
         return null;
     }
 
-    public String getBirthDate() {
+
+    public Date getBirthDate() {
         return null;
     }
+
+    public String getUserName() {
+        return null;
+    }
+
+    public String getPassword() {
+
+
 
 
 }
