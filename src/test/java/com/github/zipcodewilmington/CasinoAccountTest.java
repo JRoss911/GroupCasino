@@ -16,11 +16,12 @@ public class CasinoAccountTest {
         String password = "ZipCode";
 
         Object actual = new CasinoAccount(firstName, lastName, birthDate, userName, password);
-
+      
         Assert.assertTrue(actual instanceof CasinoAccount);
     }
 
     @Test
+
     public void casinoAccountGetFirstNameTest(){
         String firstName = "Anthony";
         String lastName = "Pearson";
@@ -89,6 +90,45 @@ public class CasinoAccountTest {
 
         Assert.assertEquals(password, actualPassword);
     }
+
+    public void casinoAccountGetFirstName(){
+        String firstName = "Anthony";
+        String lastName = "Pearson";
+        Date birthdate = new Date("01/01/2000");
+        String userName = "zip";
+        String password = "Zipcode";
+
+        CasinoAccount account = new CasinoAccount(firstName, null, null, null, null);
+        String actual = account.getFirstName();
+        Assert.assertTrue(actual.equals(firstName));
+    }
+
+    @Test
+    public void casinoAccountGetLastName(){
+        String firstName = "Anthony";
+        String lastName = "Pearson";
+        Date birthdate = new Date("01/01/2000");
+        String userName = "zip";
+        String password = "Zipcode";
+
+        CasinoAccount account = new CasinoAccount(null, lastName, null, null, null);
+        String actual = account.getLastName();
+        Assert.assertTrue(actual.equals(firstName));
+    }
+
+    @Test
+    public void casinoAccountGetBirthDate(){
+        String firstName = "Anthony";
+        String lastName = "Pearson";
+        Date birthdate = new Date("01/01/2000");
+        String userName = "zip";
+        String password = "Zipcode";
+
+        CasinoAccount account = new CasinoAccount(null, null, birthdate, null, null);
+        String actual = account.getBirthDate();
+        Assert.assertTrue(actual.equals(birthdate));
+    }
+
 
 
 }
