@@ -2,8 +2,8 @@ package com.github.zipcodewilmington;
 
 import com.github.zipcodewilmington.casino.CasinoAccount;
 import com.github.zipcodewilmington.casino.CasinoAccountManager;
+import com.github.zipcodewilmington.casino.CasinoPlayerInterface;
 import com.github.zipcodewilmington.casino.GameInterface;
-import com.github.zipcodewilmington.casino.PlayerInterface;
 import com.github.zipcodewilmington.casino.games.numberguess.NumberGuessGame;
 import com.github.zipcodewilmington.casino.games.numberguess.NumberGuessPlayer;
 import com.github.zipcodewilmington.casino.games.slots.SlotsGame;
@@ -72,7 +72,7 @@ public class Casino implements Runnable {
 
     private void play(Object gameObject, Object playerObject) {
         GameInterface game = (GameInterface)gameObject;
-        PlayerInterface player = (PlayerInterface)playerObject;
+        CasinoPlayerInterface player = (CasinoPlayerInterface)playerObject;
         game.add(player);
         game.run();
     }
