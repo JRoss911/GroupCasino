@@ -24,7 +24,7 @@ public class TradingDayTest {
    @Test
    public void tradingDayConstructorTest(){
        //Given
-    String expectedStonkName = "";
+    String expectedStonkName = getStonkName;
     int[] stonk = new int[]{Integer.MAX_VALUE};
     int portfolio = Integer.MAX_VALUE;
 
@@ -43,7 +43,7 @@ public class TradingDayTest {
     @Test
     public void testSetStonkName(){
         TradingDayTest tradingDayTest = new TradingDayTest();
-
+        String getStonkName = "";
         tradingDayTest.testSetStonkName();
         String actual = tradingDayTest.getStonkName;
 
@@ -54,24 +54,37 @@ public class TradingDayTest {
     public void testSetPortfolio(){
         TradingDayTest tradingDayTest = new TradingDayTest();
         int expected = 1000;
+        int setPortfolio = getPortfolio;
 
-        tradingDayTest.testSetStonkName();
+        tradingDayTest.testSetPortfolio();
 
-        Assert.assertEquals(expected, getPortfolio);
+        Assert.assertEquals(expected, setPortfolio);
+    }
+    @Test
+    public void testSetStonk(){
+        TradingDayTest tradingDayTest = new TradingDayTest();
+        int[] expected = {-10, -8, -6, -4, -2, 2, 4, 6, 8 ,10};
+
+        tradingDayTest.testSetStonk();
+        
+        Assert.assertEquals(expected, getStonk);
     }
 
     @Test
     public void portfolioValueTest(){
     TradingDayTest tradingDayTest = new TradingDayTest();
-
-
     }
 
     @Test
     public void valueChangeTest(){
-
-
-
-
+        TradingDayTest tradingDayTest = new TradingDayTest();
+    }
+    @Test
+    public void setGetStonkTest() {
+        TradingDayTest tradingDayTest = new TradingDayTest();
+    }
+    @Test
+    public void setPortfolioTest() {
+        TradingDayTest tradingDayTest = new TradingDayTest();
     }
 }
