@@ -1,4 +1,10 @@
 package com.github.zipcodewilmington.casino;
 
-public abstract class GamblingGame {
+import java.util.Date;
+
+public abstract class GamblingGame implements GameInterface{
+
+
+
+
 }

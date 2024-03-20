@@ -2,12 +2,13 @@ package com.github.zipcodewilmington.casino.games.roulette;
 
 import com.github.zipcodewilmington.RouletteGamePocket;
 
-import java.util.ArrayList;
-import java.util.Random;
+public class Result {
+    private RouletteGamePocket pocket;
 
-public class RouletteGameWheel {
+    public Result(RouletteGamePocket pocket) {
+    }
 
-    public RouletteGamePocket spin() {
+    public Object getPocket() {
         return null;
     }
 }
